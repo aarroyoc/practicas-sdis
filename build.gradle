@@ -34,3 +34,8 @@ task timeprinter_run(type:JavaExec) {
    main = "sdis.timeprinter.TimePrinter"
    classpath = sourceSets.main.runtimeClasspath
 }
+
+task cola_run(type:JavaExec) {
+    main = "sdis.cola.Main"
+    classpath = sourceSets.main.runtimeClasspath
+}
