@@ -39,3 +39,8 @@ task cola_run(type:JavaExec) {
     main = "sdis.cola.Main"
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task echo_run(type:JavaExec) {
+    main = "sdis.echo.ServerEcho"
+    classpath = sourceSets.main.runtimeClasspath
+}
