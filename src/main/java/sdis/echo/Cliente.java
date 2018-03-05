@@ -32,6 +32,7 @@ public class Cliente {
         } catch (Exception e) {
             
         }finally{
+            System.out.println("Espero que hayas pasado un rato divertido con el echo");
             cliente.close();
         }
     }

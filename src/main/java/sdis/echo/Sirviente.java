@@ -22,7 +22,7 @@ public class Sirviente implements Runnable{
         try{
             while(!quit){
                 String word = reader.readLine();
-                if(word.equals("bye")){
+                if(word == null | word.equals("bye")){
                     quit = true;
                 }
                 System.out.println("ECHO: "+word);
