@@ -9,10 +9,11 @@ public class Main {
         ColaStrings cola = new ColaStrings() ;
         Runnable genera = new Productor(cola) ;
         Runnable come = new Consumidor(cola) ;
+        Runnable comecome = new Consumidor(cola);
 
         new Thread(genera).start();
         new Thread(come).start();
-
+        new Thread(comecome).start();
     }
 
 }
