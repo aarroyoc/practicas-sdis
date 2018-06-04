@@ -83,3 +83,13 @@ task caja_leer(type:JavaExec){
     main = "sdis.caja.ClienteLeer"
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task file_server(type:JavaExec){
+    main = "sdis.file.server.RunFileServidor"
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task file_client(type:JavaExec){
+    main = "sdis.file.client.FileServerCliente"
+    classpath = sourceSets.main.runtimeClasspath
+}
