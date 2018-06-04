@@ -58,3 +58,13 @@ task tallerdos_run(type:JavaExec) {
     main = "protocol.Servidor.Servidor"
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task rmi_server(type:JavaExec) {
+    main = "sdis.rmi.Servidor"
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task rmi_client(type:JavaExec) {
+    main = "sdis.rmi.Cliente"
+    classpath = sourceSets.main.runtimeClasspath
+}
