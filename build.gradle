@@ -68,3 +68,18 @@ task rmi_client(type:JavaExec) {
     main = "sdis.rmi.Cliente"
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task caja_server(type:JavaExec) {
+    main = "sdis.caja.Server"
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task caja_guardar(type:JavaExec){
+    main = "sdis.caja.ClienteGuardar"
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task caja_leer(type:JavaExec){
+    main = "sdis.caja.ClienteLeer"
+    classpath = sourceSets.main.runtimeClasspath
+}
